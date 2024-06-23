@@ -1,0 +1,219 @@
+.converter {
+    max-width: calc(600px - 64px);
+    width: 100%;
+    background-color: #14151B;
+    border: 1px solid #24252D;
+    border-radius: 40px;
+    padding: 36px 32px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+.balance {
+    border-radius: 16px;
+    background: linear-gradient(173.66deg, rgba(47, 49, 57, 0.8) 2.422%, rgba(36, 37, 44, 0.8) 31.766%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+span.lable {
+    font-size: 14px;
+    font-weight: 600;
+    color: #AEB0B7;
+}
+
+.balance_count {
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+}
+
+.balance_count span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #AEB0B7;
+}
+
+.balance_count span:nth-child(1) {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.balance_stat {
+    display: flex;
+    gap: 3px;
+}
+
+.balance_stat span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #AEB0B7;
+}
+
+.balance_stat span:nth-child(1) {
+    color: #FFFFFF;
+}
+
+.progress_info {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.progress_info span {
+    font-weight: 500;
+}
+
+.progress_bar {
+    background-color: #090A0E;
+    border-radius: 20px;
+    height: 8px;
+    padding: 3.5px;
+}
+
+.MuiFormControl-root {
+    margin: 0 !important;
+}
+
+.MuiInputBase-root {
+    position: relative !important;
+    color: #FFFFFF !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+}
+
+.MuiInputBase-root::before {
+    content: url("data:image/svg+xml,%3Csvg width='18' height='11' viewBox='0 0 18 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 1.5L9.17391 8.5L17 1.5' stroke='%23878892' stroke-width='3'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    right: 20px;
+}
+
+.MuiInputBase-root svg {
+    display: none !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border: 1px solid #24252D;
+    border-radius: 16px !important;
+}
+
+.MuiSelect-select {
+    background-color: #090A0E !important;
+    border-radius: 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px;
+}
+
+.MuiSelect-select span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+}
+
+.MuiSelect-select .name {
+    margin-bottom: -5px;
+}
+
+
+.MuiPaper-root {
+    background-color: #24252D !important;
+}
+
+.MuiButtonBase-root {
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px;
+}
+
+.MuiButtonBase-root span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+}
+
+
+.MuiButtonBase-root .name {
+    margin-bottom: -5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons .text_block {
+    background-color: #24252D;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #AEB0B7;
+}
+
+.buttons .button button {
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    border-radius: 16px;
+    background: linear-gradient(144.30deg, rgb(39, 230, 92) 0.074%, rgb(88, 123, 255) 37.973%, rgb(181, 24, 255) 74.325%);
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.buttons .buttons_block {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.buttons .buttons_block button {
+    background-color: #24252D;
+    border-radius: 12px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.buttons .buttons_block button span {
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+}
+.buttons .buttons_block button span .lable{
+    color: #878892 !important;
+    font-size: 13px;
+    font-weight: 600;
+}
+.buttons .buttons_block button span .accent {
+    background: linear-gradient(147.79deg, rgb(88, 123, 255), rgb(181, 24, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

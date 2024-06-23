@@ -1,0 +1,21 @@
+body{
+    background-color: #090A0E;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Work Sans", sans-serif !important;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+body, html{
+    padding: 0;
+    margin: 0;
+}
