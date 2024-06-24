@@ -93,7 +93,7 @@ span.lable {
 .progress_bar {
     background-color: #090A0E;
     border-radius: 20px;
-    height: 8px;
+    height: 16px;
     padding: 3.5px;
 }
 
