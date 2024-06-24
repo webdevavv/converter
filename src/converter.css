@@ -1,5 +1,5 @@
 .converter {
-    max-width: calc(600px - 64px);
+    max-width: 600px;
     width: 100%;
     background-color: #14151B;
     border: 1px solid #24252D;
@@ -10,6 +10,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
+}
+@media (max-width: 620px){
+    .converter{
+        margin: 10px;
+    }
 }
 
 h1 {
@@ -25,6 +31,12 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 28px;
+}
+@media (max-width: 500px) {
+    .balance__info{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 span.lable {
@@ -89,7 +101,7 @@ span.lable {
     margin: 0 !important;
 }
 
-.MuiInputBase-root {
+.select_platform_block > .MuiInputBase-root {
     position: relative !important;
     color: #FFFFFF !important;
     font-size: 20px !important;
@@ -97,18 +109,18 @@ span.lable {
     font-style: normal !important;
 }
 
-.MuiInputBase-root::before {
+.select_platform_block > .MuiInputBase-root::before {
     content: url("data:image/svg+xml,%3Csvg width='18' height='11' viewBox='0 0 18 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 1.5L9.17391 8.5L17 1.5' stroke='%23878892' stroke-width='3'/%3E%3C/svg%3E%0A");
     position: absolute;
     right: 20px;
 }
 
-.MuiInputBase-root svg {
+.select_platform_block .MuiInputBase-root svg {
     display: none !important;
 }
 
 .MuiOutlinedInput-notchedOutline {
-    border: 1px solid #24252D;
+    border: 1px solid #24252D !important;
     border-radius: 16px !important;
 }
 
@@ -120,20 +132,21 @@ span.lable {
     gap: 5px;
 }
 
-.MuiSelect-select span {
+.select_platform_block .MuiSelect-select span {
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 26px;
 }
 
-.MuiSelect-select .name {
+.select_platform_block .MuiSelect-select .name {
     margin-bottom: -5px;
 }
 
-
 .MuiPaper-root {
     background-color: #24252D !important;
+    border-radius: 16px !important;
+    margin-top: 10px !important;
 }
 
 .MuiButtonBase-root {
@@ -153,15 +166,36 @@ span.lable {
     font-style: normal !important;
 }
 
-
 .MuiButtonBase-root .name {
     margin-bottom: -5px;
+}
+
+.converter_block__info{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.converter_block__info div{
+    display: flex;
+    gap: 20px;
+}
+.converter_block__info span{
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+}
+.converter_block__info span strong{
+    color: #fff;
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
 }
 
 .buttons .text_block {
@@ -184,12 +218,17 @@ span.lable {
     color: #FFFFFF;
 }
 
+.buttons .buttons_block__wrapper{
+    overflow-x: auto;
+}
+
 .buttons .buttons_block {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    width: 450px;
+    overflow-x: scroll;
 }
-
 .buttons .buttons_block button {
     background-color: #24252D;
     border-radius: 12px;
@@ -216,4 +255,78 @@ span.lable {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+
+.converter_block__items{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.converter_block__item{
+    max-width: 243px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (max-width: 490px) {
+    .converter_block__items{
+        flex-direction: column;
+    }
+    .converter_block__item{
+        max-width: 100%;
+    }
+}
+.converter_block__item .converter_block__input{
+    display: flex;
+    height: 75px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #090A0E;
+    border: 1px solid #313238;
+    border-radius: 16px;
+    padding-right: 20px;
+}
+
+.converter_block__item .converter_block__input .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+    border-radius: 16px !important;
+}
+
+.converter_block__item .converter_block__input img{
+    width: 32px !important;
+}
+
+.converter_block__item .converter_block__input input{
+    max-width: 80px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    text-align: right;
+    color: #878892;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.converter_block__item .converter_block__input inputinput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.converter_block__items .converter_block_image{
+    margin-top: 25px;
+}
+@media(max-width: 490px){
+    .converter_block__items .converter_block_image{
+        margin-top: 15px;
+        rotate: 90deg;
+    }
 }

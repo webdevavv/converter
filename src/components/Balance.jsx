@@ -24,6 +24,7 @@ const Balance = () => {
                 display="flex"
                 alignItems="flex-start"
                 justifyContent="space-between"
+                className="balance__info"
             >
                 <Box
                     display="flex"
